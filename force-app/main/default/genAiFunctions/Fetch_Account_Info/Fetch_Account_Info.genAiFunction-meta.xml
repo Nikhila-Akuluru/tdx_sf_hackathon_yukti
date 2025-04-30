@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Fetch Account information from the Account Object in Salesforce</description>
+    <invocationTarget>AgentforceFlow</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Fetch Account Info</masterLabel>
+    <progressIndicatorMessage>Fetching....Please Wait</progressIndicatorMessage>
+</GenAiFunction>

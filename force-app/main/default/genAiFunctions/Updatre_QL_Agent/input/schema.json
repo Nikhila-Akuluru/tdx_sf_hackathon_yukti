@@ -1,0 +1,21 @@
+{
+  "required" : [ "DiscountValue", "QuoteLineId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DiscountValue" : {
+      "title" : "DiscountValue",
+      "description" : "Get the value from the Discount model and the discount value suggested by the agent",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "QuoteLineId" : {
+      "title" : "QuoteLineId",
+      "description" : "Get the QuotelinetemIdtext value from the converstion",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

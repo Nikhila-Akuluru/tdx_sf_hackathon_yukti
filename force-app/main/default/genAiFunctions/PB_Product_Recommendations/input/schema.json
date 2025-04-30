@@ -1,0 +1,44 @@
+{
+  "required" : [ "Input:CaseInput", "Input:Product", "Input:InputfromOppty", "citationMode" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:CaseInput" : {
+      "title" : "CaseInput",
+      "description" : "Get the Case Reference#",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Case"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Input:Product" : {
+      "title" : "Product",
+      "description" : "Provide type of Product you are looking for e.g Mobile for B2C, or a complex GTM product for B2B customers",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Product2"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Input:InputfromOppty" : {
+      "title" : "InputfromOppty",
+      "description" : "Get the Opportunity details for the B2B customers as needed",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "OpportunityLineItem"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Disabled",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

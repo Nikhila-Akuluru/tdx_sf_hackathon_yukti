@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic covers providing product recommendations to users based on their preferences and needs. It includes understanding user requirements and suggesting suitable products.</description>
+    <developerName>Product_Recommendation</developerName>
+    <genAiFunctions>
+        <functionName>ProductSuggestion_PB</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the user about their preferences and requirements to tailor the product recommendation.</description>
+        <developerName>instruction_asktheuser0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_asktheuser0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user is unsure, offer to help narrow down choices based on specific criteria they provide.</description>
+        <developerName>instruction_iftheuseri1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuseri1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Include relevant product features and benefits in the recommendation.</description>
+        <developerName>instruction_includerel2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_includerel2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide comparisons between different products if the user requests it.</description>
+        <developerName>instruction_providecom3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_providecom3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When recommending products, consider the latest available models and their reviews.</description>
+        <developerName>instruction_whenrecomm4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenrecomm4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Highlight the recommended product in a new line along with the response</description>
+        <developerName>instruction_highlightt5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_highlightt5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once the product is suggested, ask the user if they need to create a quote with the suggested product. If yes prompt the user to input the account name</description>
+        <developerName>instruction_oncethepro6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_oncethepro6</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Product Recommendation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide product recommendations based on user inputs, including preferences and requirements. You should also create a quote based using the suggested product</scope>
+</GenAiPlugin>

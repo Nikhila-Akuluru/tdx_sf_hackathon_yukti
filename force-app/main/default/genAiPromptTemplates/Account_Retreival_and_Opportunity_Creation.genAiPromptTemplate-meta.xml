@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_3</activeVersionIdentifier>
+    <description>To retrive the account Id from account name and create opporutunity</description>
+    <developerName>Account_Retreival_and_Opportunity_Creation</developerName>
+    <masterLabel>Account Retreival and Opportunity Creation</masterLabel>
+    <templateVersions>
+        <content>Get account name, retrieve account Id and create opportunity
+</content>
+        <inputs>
+            <apiName>Account_Name</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>Account Name</masterLabel>
+            <referenceName>Input:Account_Name</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>ou are a CRM assistant. Given the Account ID, perform two tasks:
+Retrieve and display the account details associated with this ID.
+Based on the retrieved account information, create a new opportunity with appropriate default fields filled in (such as account name, industry, contact info, and potential value if applicable).
+Input:
+ Account ID: {{account_id}}
+Instructions:
+Use the Account ID to fetch full account details including name, industry, contacts, and recent activity.
+Ensure that the new opportunity is associated with the correct account.
+If any required fields for the opportunity are missing, indicate them in the output for manual completion.
+Present both the retrieved account data and the created opportunity in a clear and structured format.
+
+INPUT:
+{!$Input:Account_Name.Id}
+
+{!$Flow:Account_Name_prompt.Prompt}
+</content>
+        <inputs>
+            <apiName>Account_Name</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>Account Name</masterLabel>
+            <referenceName>Input:Account_Name</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>flow://Account_Name_prompt</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>AccounName</parameterName>
+                <valueExpression>{!$Input:Account_Name}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Account_Name_prompt</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>ou are a CRM assistant. Given the Account ID, perform two tasks:
+Retrieve and display the account details associated with this ID.
+Based on the retrieved account information, create a new opportunity with appropriate default fields filled in (such as account name, industry, contact info, and potential value if applicable).
+Input:
+ Account ID: {{account_id}}
+Instructions:
+Use the Account ID to fetch full account details including name, industry, contacts, and recent activity.
+Ensure that the new opportunity is associated with the correct account.
+If any required fields for the opportunity are missing, indicate them in the output for manual completion.
+Present both the retrieved account data and the created opportunity in a clear and structured format.
+
+INPUT:
+{!$Input:Account_Name.Id}
+
+{!$Flow:Account_Name_prompt.Prompt}
+</content>
+        <inputs>
+            <apiName>Account_Name</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>Account Name</masterLabel>
+            <referenceName>Input:Account_Name</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Account_Name_prompt</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Account_Name</parameterName>
+                <valueExpression>{!$Input:Account_Name}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Account_Name_prompt</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>ou are a CRM assistant. Given the Account ID, perform two tasks:
+Retrieve and display the account details associated with this ID.
+Based on the retrieved account information, create a new opportunity with appropriate default fields filled in (such as account name, industry, contact info, and potential value if applicable).
+Input:
+ Account ID: {{account_id}}
+Instructions:
+Use the Account ID to fetch full account details including name, industry, contacts, and recent activity.
+Ensure that the new opportunity is associated with the correct account.
+If any required fields for the opportunity are missing, indicate them in the output for manual completion.
+Present both the retrieved account data and the created opportunity in a clear and structured format.
+
+INPUT:
+{!$Input:Account_Name.Id}
+
+
+</content>
+        <inputs>
+            <apiName>Account_Name</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>Account Name</masterLabel>
+            <referenceName>Input:Account_Name</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_4</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles fetching account details when the user responds positively to a product suggestion.</description>
+    <developerName>Account_Fetching</developerName>
+    <genAiFunctions>
+        <functionName>AgentforceFlow</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the account name.</description>
+        <developerName>instruction_asktheacco0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_asktheacco0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If provided call the flow AgentforceFlow with the provided Account name and suggested product name as input</description>
+        <developerName>instruction_ifprovided1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifprovided1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Account Fetching</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to fetch account details if the user indicates interest in a product suggestion.</scope>
+</GenAiPlugin>

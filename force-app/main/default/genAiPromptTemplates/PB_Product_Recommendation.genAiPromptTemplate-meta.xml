@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_2</activeVersionIdentifier>
+    <developerName>PB_Product_Recommendation</developerName>
+    <masterLabel>PB Product Recommendation</masterLabel>
+    <templateVersions>
+        <content>Get me best one and only one {!$Input:InputfromOppty.Product2.Name} for the business use described below 
+
+{!$Input:CaseInput.Subject}
+{!$Input:CaseInput.Description}
+
+
+Choose products from the catalogues 
+{!$EinsteinSearch:KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32.results}
+</content>
+        <inputs>
+            <apiName>Product</apiName>
+            <definition>SOBJECT://Product2</definition>
+            <masterLabel>Product</masterLabel>
+            <referenceName>Input:Product</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>InputfromOppty</apiName>
+            <definition>SOBJECT://OpportunityLineItem</definition>
+            <masterLabel>InputfromOppty</masterLabel>
+            <referenceName>Input:InputfromOppty</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>CaseInput</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>CaseInput</masterLabel>
+            <referenceName>Input:CaseInput</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Product.Name}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Get me best one and only one {!$Input:InputfromOppty.Product2.Name} for the business use described below 
+
+{!$Input:CaseInput.Subject}
+{!$Input:CaseInput.Description}
+
+
+Choose products from the catalogues 
+{!$EinsteinSearch:KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32.results}
+</content>
+        <inputs>
+            <apiName>Product</apiName>
+            <definition>SOBJECT://Product2</definition>
+            <masterLabel>Product</masterLabel>
+            <referenceName>Input:Product</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>InputfromOppty</apiName>
+            <definition>SOBJECT://OpportunityLineItem</definition>
+            <masterLabel>InputfromOppty</masterLabel>
+            <referenceName>Input:InputfromOppty</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>CaseInput</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>CaseInput</masterLabel>
+            <referenceName>Input:CaseInput</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Product.Name}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Get me best one and only one {!$Input:InputfromOppty.Product2.Name} for the business use described below 
+
+
+Choose products from the catalogues 
+{!$EinsteinSearch:KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32.results}
+</content>
+        <inputs>
+            <apiName>CaseInput</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>CaseInput</masterLabel>
+            <referenceName>Input:CaseInput</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>InputfromOppty</apiName>
+            <definition>SOBJECT://OpportunityLineItem</definition>
+            <masterLabel>InputfromOppty</masterLabel>
+            <referenceName>Input:InputfromOppty</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Product</apiName>
+            <definition>SOBJECT://Product2</definition>
+            <masterLabel>Product</masterLabel>
+            <referenceName>Input:Product</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Product.Name}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:KA_Agentforce_Agent_Product_Recommendati_1Cx_CTb7313ab32</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_3</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

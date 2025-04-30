@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get Customer relevant information that can fetch the Account information as input then use the prompt to get the related product that is most suitable for the current information shared by the user</description>
+    <invocationTarget>PB_Product_Recommendation</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>PB Product Recommendations</masterLabel>
+    <progressIndicatorMessage>Provide Details to verify your Account# ....!!!!</progressIndicatorMessage>
+</GenAiFunction>

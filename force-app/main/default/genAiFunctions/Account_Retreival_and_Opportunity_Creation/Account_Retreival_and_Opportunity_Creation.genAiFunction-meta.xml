@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To retrive the account Id from account name and create opporutunity</description>
+    <invocationTarget>Account_Retreival_and_Opportunity_Creation</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Account Retreival and Opportunity Creation</masterLabel>
+    <progressIndicatorMessage>Loading...</progressIndicatorMessage>
+</GenAiFunction>

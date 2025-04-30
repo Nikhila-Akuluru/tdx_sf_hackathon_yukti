@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Generate quotes with product selection and discounts for B2B customers.</description>
+    <developerName>p_16jNS000000kPJZ_Quote_Generation_for_BB</developerName>
+    <genAiPluginInstructions>
+        <description>If the user requests a quote for a B2B customer, select the appropriate products and apply the necessary discounts.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quote Generation for BB</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only generate quotes for B2B customers, including product selection and applying discounts. You aren&apos;t able to handle order creation for B2C customers.</scope>
+</GenAiPlugin>

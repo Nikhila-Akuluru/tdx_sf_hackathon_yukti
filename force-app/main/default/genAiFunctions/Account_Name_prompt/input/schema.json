@@ -1,0 +1,17 @@
+{
+  "required" : [ "Account_Name" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Account_Name" : {
+      "title" : "Account_Name",
+      "description" : "Get the input",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Account"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

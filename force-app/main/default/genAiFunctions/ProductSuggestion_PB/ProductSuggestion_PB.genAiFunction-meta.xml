@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This template suggests the product based on the pdf uploaded to the data library</description>
+    <invocationTarget>ProductSuggestion_PB</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>ProductSuggestion_PB</masterLabel>
+    <progressIndicatorMessage>Analysing..</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get product information for my quote</description>
+    <developerName>Product_Recommendation</developerName>
+    <masterLabel>Product Recommendation</masterLabel>
+    <templateVersions>
+        <content>Get me best one and only one {!$Input:Product.Product2.Name} for the business use described below 
+
+{!$Input:Case.Subject}
+
+{!$Input:Case.Description}l
+
+Choose products from the catalogues 
+
+{!$EinsteinSearch:Default_KA_All_Records_and_Fields_Def_Retriever_1Cx_CTb235c3095.results}
+
+</content>
+        <inputs>
+            <apiName>Product</apiName>
+            <definition>SOBJECT://OpportunityLineItem</definition>
+            <masterLabel>Product</masterLabel>
+            <referenceName>Input:Product</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Case</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>Case</masterLabel>
+            <referenceName>Input:Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultAzureOpenAIGPT4Turbo</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_KA_All_Records_and_Fields_Def_Retriever_1Cx_CTb235c3095</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Product.Product2.Name}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_KA_All_Records_and_Fields_Def_Retriever_1Cx_CTb235c3095</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qNSTJxrNR/QXe/3FrKZRJ6WTUadGGIIko060IsuA1GY=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

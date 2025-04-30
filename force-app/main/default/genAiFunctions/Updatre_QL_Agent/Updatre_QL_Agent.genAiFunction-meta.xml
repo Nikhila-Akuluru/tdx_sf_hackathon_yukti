@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Run this flow after Discount Models
+Prompt the user wheater to update the Quote with discount
+If yes run this flow</description>
+    <invocationTarget>Updatre_QL_Agent</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Updatre QL Agent</masterLabel>
+    <progressIndicatorMessage>Loadng...</progressIndicatorMessage>
+</GenAiFunction>

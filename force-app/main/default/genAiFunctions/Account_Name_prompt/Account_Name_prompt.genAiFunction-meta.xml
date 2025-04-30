@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get the account and summarize it once the user provide yes as a answer for the question to create opporutnity</description>
+    <invocationTarget>Account_Name_prompt</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>true</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Account Name prompt</masterLabel>
+    <progressIndicatorMessage>Fetching</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Select products automatically based on multiple inputs provided by the user. Check what product category customer is looking for and decide the appropriate product for the customer</description>
+    <developerName>p_16jNS000000kPJZ_Automated_Product_Selection</developerName>
+    <genAiFunctions>
+        <functionName>Fetch_Account_Info</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Get Account Information for creating the Order for. Please check the Account from the Account Name</description>
+        <developerName>instruction_getaccount0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_getaccount0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Product information category will be provided and can use the Knowledge articles to get best products from the selected products we have</description>
+        <developerName>instruction_productinf1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_productinf1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Select one and only one product and store to variable ProductInfo. Use Product Information to get the best matching product.</description>
+        <developerName>instruction_selectonea2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_selectonea2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Select products automatically based on multiple inputs provided by the user. Utilize associated knowledge articles to enhance the context and accuracy of product recommendations.</description>
+        <developerName>instruction_selectprod3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_selectprod3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Select One and Only One product and Highlight the Product with &quot;Recommended Product:&quot; word in a new line</description>
+        <developerName>instruction_selectonea4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_selectonea4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use &quot;ProductInfo&quot; Context variable to hold the Product Name</description>
+        <developerName>instruction_useproduct5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useproduct5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Fetch Account Info to get the account Information</description>
+        <developerName>instruction_usefetchac6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usefetchac6</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Automated Product Selection</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Scope is to select the product from associate knowledge articles not from generic random search. Use Knowledge articles for better product and select best product from the articles.</scope>
+</GenAiPlugin>

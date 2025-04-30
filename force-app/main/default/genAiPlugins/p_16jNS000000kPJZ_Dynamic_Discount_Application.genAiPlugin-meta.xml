@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Apply discounts using a predefined discount model based on user inputs.</description>
+    <developerName>p_16jNS000000kPJZ_Dynamic_Discount_Application</developerName>
+    <genAiFunctions>
+        <functionName>Discount_Models</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user requests a discount, apply the appropriate discount based on the discount model.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Dynamic Discount Application</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only apply the appropriate discounts using the discount model. You aren&apos;t able to create new discount models.</scope>
+</GenAiPlugin>

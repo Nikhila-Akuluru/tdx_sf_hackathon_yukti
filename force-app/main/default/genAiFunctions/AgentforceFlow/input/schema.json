@@ -1,0 +1,31 @@
+{
+  "required" : [ "Text_Account_Name" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ReturnedOpp" : {
+      "title" : "ReturnedOpp",
+      "description" : "Not needed",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Opportunity"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Text_Account_Name" : {
+      "title" : "Text_Account_Name",
+      "description" : "Map this with the input provided by the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Text_Product_Name" : {
+      "title" : "Text_Product_Name",
+      "description" : "Map this with product recommended by agent",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,21 @@
+{
+  "required" : [ "Text_Account_Name", "Text_Product_Name" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Text_Account_Name" : {
+      "title" : "Text_Account_Name",
+      "description" : "Account Name will be used to query the Account details. Please input",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Text_Product_Name" : {
+      "title" : "Text_Product_Name",
+      "description" : "Mention Product details you are looking for.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
